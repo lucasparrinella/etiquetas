@@ -1,0 +1,286 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: white;
+  font-family: 'Yomogi', cursive; }
+
+/* HEADER + NAV */
+.nav_list {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 10px; }
+  .nav_list:hover {
+    color: rgb(138, 100, 73);
+    transition: linear 0.3s; }
+
+.activo {
+  text-decoration: underline;
+  color: rgb(255, 255, 255); }
+
+header {
+  background-color: rgb(71, 32, 5);
+  display: flex;
+  width: 100%;
+  padding: 0px 0%; }
+
+/* LOGO */
+.header__etiquetas {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  cursor: pointer;
+  font-weight: bolder;
+  padding: 0px 50px ; }
+
+/* TERMINA LOGO */
+.navbar {
+  width: 100%; }
+
+.nav__links {
+  list-style: none;
+  padding-right: 250px; }
+  .nav__links li {
+    display: inline-block;
+    padding: 10px; }
+    .nav__links li a {
+      transition: all 0.3s linear; }
+
+.nav__links li a:hover {
+  background-color: #f3c2cb;
+  cursor: pointer;
+  color: black; }
+
+/* BODY */
+.container__img {
+  display: flex;
+  justify-content: center; }
+
+.img__principal {
+  width: 80%;
+  height: auto;
+  border: none;
+  border-radius: 30px; }
+
+.section__productos {
+  margin: auto;
+  padding-top: 40px; }
+
+.card-title {
+  font-weight: bold; }
+
+.botonCard {
+  background-color: rgb(138, 100, 73);
+  border: none;
+  font-weight: bold; }
+  .botonCard:hover {
+    background-color: rgb(160, 124, 99);
+    color: white;
+    transition: linear 0.5s; }
+
+.card__productos {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px; }
+
+/* BREADCRUMB */
+.breadCrumbs {
+  justify-content: center;
+  text-align: center; }
+  .breadCrumbs ol {
+    justify-content: center; }
+    .breadCrumbs ol li {
+      text-align: center;
+      padding-top: 40px; }
+      .breadCrumbs ol li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black; }
+        .breadCrumbs ol li a:hover {
+          color: #f3c2cb;
+          transition: linear 0.3s; }
+
+/* FOOTER */
+footer {
+  display: flex;
+  width: 100%;
+  background: #0e0d0d;
+  justify-content: space-around;
+  text-align: center;
+  height: 70px;
+  margin-top: 40px; }
+
+@media (max-width: 600px) {
+  .footerinstagram {
+    font-size: 13px; }
+    .footerinstagram a img {
+      width: 25px;
+      height: 25px; }
+  .footerfacebook {
+    font-size: 13px; }
+    .footerfacebook a img {
+      width: 25px;
+      height: 25px; }
+  .footerwhatsapp {
+    font-size: 13px; }
+    .footerwhatsapp a img {
+      width: 25px;
+      height: 25px; } }
+
+.footerinstagram {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: auto; }
+  .footerinstagram img {
+    width: 30px;
+    height: 30px; }
+    .footerinstagram img:hover {
+      transition: linear 0.2s;
+      opacity: 20%; }
+  .footerinstagram p {
+    color: #f3c2cb; }
+
+.footerfacebook {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: auto; }
+  .footerfacebook img {
+    width: 30px;
+    height: 30px; }
+    .footerfacebook img:hover {
+      transition: linear 0.2s;
+      opacity: 20%; }
+  .footerfacebook p {
+    color: #f3c2cb; }
+
+.footerwhatsapp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: auto; }
+  .footerwhatsapp img {
+    width: 30px;
+    height: 30px; }
+    .footerwhatsapp img:hover {
+      transition: linear 0.2s;
+      opacity: 20%; }
+  .footerwhatsapp p {
+    color: #f3c2cb; }
+
+
+/* CONTACTO */
+.informacion1 {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  justify-content: center;
+  text-align: center;
+  background-color: #f3c2cb;
+  border-radius: 100%; }
+  .informacion1 .imagenInfo1 img {
+    width: 300px;
+    height: auto;
+    border-radius: 10%; }
+  .informacion1 .textoInfo1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 65%;
+    margin-left: 20px; }
+    .informacion1 .textoInfo1 .quienesSomos {
+      font-size: 40px;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+      justify-content: center; }
+    .informacion1 .textoInfo1 .quienesSomosText {
+      text-align: center;
+      justify-content: center;
+      padding-top: 30px;
+      font-weight: bold; }
+
+.informacion2 {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffddfd;
+  border-radius: 100%; }
+  .informacion2 .imagenInfo2 img {
+    width: 300px;
+    height: auto;
+    border-radius: 10%; }
+  .informacion2 .textoInfo2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 65%;
+    margin-right: 20px; }
+    .informacion2 .textoInfo2 .comoTrabajamos {
+      font-size: 40px;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+      justify-content: center; }
+    .informacion2 .textoInfo2 .comoTrabajamosText {
+      text-align: center;
+      justify-content: center;
+      padding-top: 30px;
+      font-weight: bold; }
+
+.informacion3 {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  justify-content: center;
+  text-align: center;
+  background-color: #64ebdf;
+  border-radius: 100%; }
+  .informacion3 .imagenInfo3 img {
+    width: 300px;
+    height: auto;
+    border-radius: 10%; }
+  .informacion3 .textoInfo3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 65%;
+    margin-left: 20px; }
+    .informacion3 .textoInfo3 .porqueElegirnos {
+      font-size: 40px;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+      justify-content: center; }
+    .informacion3 .textoInfo3 .porqueElegirnosText {
+      text-align: center;
+      justify-content: center;
+      padding-top: 30px;
+      font-weight: bold; }
+
+.breadCrumbs {
+  display: inline; }
+  .breadCrumbs ul {
+    list-style: none; }
+    .breadCrumbs ul li a {
+      text-decoration: none;
+      color: black; }
+      .breadCrumbs ul li a:hover {
+        color: #f3c2cb;
+        transition: linear 0.3s; }
